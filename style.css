@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eeb855;
+  line-height: 1.2;
+  color: white;
+}
+
+/*********HEADER*********/
+header h1 {
+  text-align: center;
+  margin: 4rem auto;
+  font-size: 4.5rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/*********FORM*********/
+form {
+  width: 40rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  box-shadow: 0.4rem 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.todo-input {
+  width: 95%;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.todo-btn {
+  width: 7%;
+  background: #eee;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: none;
+  color: #333;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.todo-btn:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #eee;
+}
+
+/********TODO LIST CONTAINER*********/
+.todo-container {
+  margin: 2rem auto;
+}
+.todo {
+  width: 40rem;
+  margin: 1rem auto;
+  position: relative;
+  color: black;
+  border-radius: 0.4rem;
+  box-shadow: 0.3rem 0.3rem 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.todo-item {
+  list-style: none;
+  padding: 0.7rem 1rem;
+  font-size: 1.6rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  width: 84%;
+  min-height: 3.3rem;
+  height: 100%;
+  word-wrap: break-word;
+  font-weight: 500;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+/*********CHECK AND DELETE BUTTON*********/
+.checked,
+.delete {
+  position: absolute;
+  top: 0;
+  width: 8%;
+  height: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+.checked {
+  right: 8%;
+  background-color: rgb(14, 189, 14);
+}
+.checked:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    rgb(14, 189, 14);
+}
+.delete {
+  right: 0;
+  background-color: rgb(202, 11, 11);
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.delete:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    rgb(202, 11, 11);
+}
+.fas {
+  pointer-events: none;
+}
+
+/*********CHECK TOGGLE*********/
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/********RESPONSIVE CODE*********/
+
+@media (max-width: 420px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 333px) {
+  html {
+    font-size: 40%;
+  }
+}
