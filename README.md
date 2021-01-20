@@ -1,4 +1,4 @@
-# Vanilla-Javascript-todo-list
+# Vanilla Javascript Todo List
 I created a simple Todo List using Vanilla JavaScript to learn some concept such as creating elements, adding and removing them from DOM and also storing the data in local storage. 
 \
 \
